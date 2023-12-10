@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище BeautySalonDBModelContainer" CdmEntityContainer="BeautySalonDBEntities">
+    <EntitySetMapping Name="Client">
+      <EntityTypeMapping TypeName="BeautySalonDBModel.Client">
+        <MappingFragment StoreEntitySet="Client">
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="IDDiscount" ColumnName="IDDiscount" />
+          <ScalarProperty Name="IDPerson" ColumnName="IDPerson" />
+          <ScalarProperty Name="ClientID" ColumnName="ClientID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Discount">
+      <EntityTypeMapping TypeName="BeautySalonDBModel.Discount">
+        <MappingFragment StoreEntitySet="Discount">
+          <ScalarProperty Name="Procent" ColumnName="Procent" />
+          <ScalarProperty Name="TitleDiscount" ColumnName="TitleDiscount" />
+          <ScalarProperty Name="DiscountID" ColumnName="DiscountID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employee">
+      <EntityTypeMapping TypeName="BeautySalonDBModel.Employee">
+        <MappingFragment StoreEntitySet="Employee">
+          <ScalarProperty Name="IDPerson" ColumnName="IDPerson" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+          <ScalarProperty Name="IDRole" ColumnName="IDRole" />
+          <ScalarProperty Name="IsWorking" ColumnName="IsWorking" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Master">
+      <EntityTypeMapping TypeName="BeautySalonDBModel.Master">
+        <MappingFragment StoreEntitySet="Master">
+          <ScalarProperty Name="IDPosition" ColumnName="IDPosition" />
+          <ScalarProperty Name="IDEmployee" ColumnName="IDEmployee" />
+          <ScalarProperty Name="MasterID" ColumnName="MasterID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Person">
+      <EntityTypeMapping TypeName="BeautySalonDBModel.Person">
+        <MappingFragment StoreEntitySet="Person">
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="PersonID" ColumnName="PersonID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Position">
+      <EntityTypeMapping TypeName="BeautySalonDBModel.Position">
+        <MappingFragment StoreEntitySet="Position">
+          <ScalarProperty Name="PositionName" ColumnName="PositionName" />
+          <ScalarProperty Name="PositionID" ColumnName="PositionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Procedure">
+      <EntityTypeMapping TypeName="BeautySalonDBModel.Procedure">
+        <MappingFragment StoreEntitySet="Procedure">
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="ProceduresName" ColumnName="ProceduresName" />
+          <ScalarProperty Name="ProcedureID" ColumnName="ProcedureID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProcedureInRecording">
+      <EntityTypeMapping TypeName="BeautySalonDBModel.ProcedureInRecording">
+        <MappingFragment StoreEntitySet="ProcedureInRecording">
+          <ScalarProperty Name="IsVisited" ColumnName="IsVisited" />
+          <ScalarProperty Name="IsCanceled" ColumnName="IsCanceled" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="IDRecording" ColumnName="IDRecording" />
+          <ScalarProperty Name="IDProcedureOfMaster" ColumnName="IDProcedureOfMaster" />
+          <ScalarProperty Name="ProcedureInRecordingID" ColumnName="ProcedureInRecordingID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProcedureOfMaster">
+      <EntityTypeMapping TypeName="BeautySalonDBModel.ProcedureOfMaster">
+        <MappingFragment StoreEntitySet="ProcedureOfMaster">
+          <ScalarProperty Name="IDProcedure" ColumnName="IDProcedure" />
+          <ScalarProperty Name="IDMaster" ColumnName="IDMaster" />
+          <ScalarProperty Name="ProcedureOfMasterID" ColumnName="ProcedureOfMasterID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Recording">
+      <EntityTypeMapping TypeName="BeautySalonDBModel.Recording">
+        <MappingFragment StoreEntitySet="Recording">
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="IDClient" ColumnName="IDClient" />
+          <ScalarProperty Name="RecordingID" ColumnName="RecordingID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Role">
+      <EntityTypeMapping TypeName="BeautySalonDBModel.Role">
+        <MappingFragment StoreEntitySet="Role">
+          <ScalarProperty Name="NameRole" ColumnName="NameRole" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
